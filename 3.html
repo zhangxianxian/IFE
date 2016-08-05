@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		#outer{
+			margin: 20px;
+			padding: 20px;
+			height: 100%;
+			width: auto;
+			background-color: #eee;
+			border: 1px solid #999;
+		}
+		#outer:after{
+			content: '.';
+			height: 0;
+			visibility: hidden;
+			display: block;
+			clear: both;
+		}
+		#first,#second,#third{
+			padding: 20px;
+			background-color: white;
+			border: 1px solid #999;
+			height: inherit;
+
+		}
+		#first{
+			width: 200px;
+			float: left;	
+		}	
+		img{
+			margin: 10px 0;
+			width: 80px;
+			height: 80px;
+		}
+		p{
+			line-height: 1.4em;
+
+		}
+		#third{
+			width: 120px;
+			float: right;
+			
+		}
+		#second{
+			margin-left: 200px;
+			margin-right: 120px;
+		}
+	</style>
+</head>
+<body>
+	<div id='outer'>
+		<div id="first">
+			<img src="./images/name.PNG" alt="作者图片">
+			<h4>个人简介</h4>
+			<p>张贤贤,本科和研究生均就读于北京邮电大学计算机学院,目前在计算机学院7组体系结构中心攻读硕士学位.</p>
+		</div>
+		
+		<div id="third">
+			<img src="./images/name.PNG" alt="作者图片">
+			<img src="./images/name.PNG" alt="作者图片">
+			<img src="./images/name.PNG" alt="作者图片">
+			<img src="./images/name.PNG" alt="作者图片">
+			<img src="./images/name.PNG" alt="作者图片">
+			<img src="./images/name.PNG" alt="作者图片">
+ 			<img src="./images/name.PNG" alt="作者图片">
+		</div>
+		<div id="second">
+			<ul>
+				任务注意事项
+				<li>尝试 position 和 float 的效果，思考它们的异同和应用场景。</li>
+				<li>注意测试不同情况，尤其是极端情况下的效果。</li>
+				<li>图片和文字内容请自行替换，尽可能体现团队的特色。</li>
+				<li>调节浏览器宽度，固定宽度和自适应宽度的效果始终符合预期。</li>
+				<li>改变中间一栏的内容长度，以确保在中间一栏较高和右边一栏较高时，父元素的高度始终为子元素中最高的高度。</li>
+				<li>其他效果图中给出的标识均被正确地实现。</li>
+			</ul>
+		</div>
+		<!-- <br style="clear:both"> -->
+	</div>
+</body>
+</html>
