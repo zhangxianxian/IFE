@@ -1,0 +1,584 @@
+body{
+			width: 100%;
+		}
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		header{
+			width: 100%;
+			height: 56px;
+			background-color: rgb(33, 137, 191);
+			position: relative;
+		}
+		header .one{
+			width: 36px;
+			height: 36px;
+			background-color: rgb(255, 255, 255);
+			position: absolute;
+			top: 10px;
+			left: 60px;
+		}
+		header .two{
+			width: 20px;
+			height: 20px;
+			background-color: rgb(255, 255, 255);
+			position: absolute;
+			top: 28px;
+			left: 78px;
+			border: 2px solid rgb(33, 137, 191);
+		}
+		header .search{
+			width: 315px;
+			height: 30px;
+			border-radius: 16px;
+			position: absolute;
+			top: 13px;
+			right: 158px;
+			border: none;
+		}
+		header img{
+			position: absolute;
+			top: 18px;
+			right: 124px;
+		}
+		header .loging{
+			width: 35px;
+			height: 30px;
+			background-color: transparent;
+			position: absolute;
+			top: 13px;
+			right: 88px;
+			border: none;
+			color: rgb(255, 255, 255);
+			font-size: 12px;
+			font-family: "黑体";
+		}
+		.main-text{
+			overflow: hidden;
+		}
+		aside{
+			width: 20%;
+			background-color: rgb(42, 46, 61);
+			float: left;
+			position: relative;
+			margin-bottom:-2000px; 
+			padding-bottom:2000px;
+		}
+		aside .top{
+			width: 100%;
+			height: 150px;
+			position: relative;
+		}
+		aside .big{
+			width: 56px;
+			height: 56px;
+			border-radius: 50%;
+			border: 2px solid rgb(185, 186, 190);
+			position: absolute;
+			left: 20%;
+			top: 10%;	
+		}
+		aside .small{
+			width: 46px;
+			height: 46px;
+			border-radius: 50%;
+			/* border: 2px solid rgb(185, 186, 190); */
+			background-color: rgb(185, 186, 190);
+			position: absolute;
+			top: 3px;
+			left: 3px;
+		}
+		aside .abc{
+			font-size: 16px;
+			font-family: "黑体";
+			color: rgb(236, 236, 236);
+			position: absolute;
+			top: 20px;
+			right: 96px;
+		}
+		aside .num{
+			position: absolute;
+			top:80px;
+			left: 70px;
+		}
+		aside .shou{
+			width: 60px;
+			height: 40px;
+			float: left;
+			font-size: 14px;
+			font-family: "黑体";
+			color: rgb(110, 128, 150);
+			text-align: center;
+		}
+		aside .bord{
+			width: 2px;
+			height: 28px;
+			border-right: 1px solid rgb(110, 128, 150);
+			position: absolute;
+			top: 10px;
+			left: 60px; 
+		}
+		aside .menu {
+			width: 100%;
+			height: 300px;
+			font-size: 12px;
+			font-family: "黑体";
+			position: absolute;
+			top: 140px;
+			left: 0;
+		}
+		aside .menu li{
+			list-style: none;
+		}
+		aside .menu li:first-child{
+			background-color: rgb(57, 62, 78);
+			margin-left: -30px;
+			padding-left: 30px;
+		}
+		aside .menu a{
+			color: rgb(110, 128, 150);
+			line-height: 40px;	
+		}
+		aside .menu .icon-white{
+			color: rgb(255, 255, 255);
+		}
+		.main{
+			width: 80%;
+			height: auto;
+			float: right; 
+			position: relative;
+			background-color: rgb(237, 237, 0237);
+			margin-bottom:-1000px; 
+			padding-bottom:1000px;
+		}
+		.main .nav{
+			width: 100%;
+			height: 35px;
+			padding: 5px 40px;
+			background-color: rgb(255, 255, 255);
+		}
+		.main nav li{
+			display: inline;
+		}
+		.main nav li a{
+			font-size: 13.5px;
+			font-family: "黑体";
+			color: rgb(172, 172, 172);
+			text-decoration: none;
+		}
+		.main nav li .docu{
+			color: rgb(117, 197, 220);
+		}
+		.main .alls{
+			width: 88%;
+			height: auto;
+			margin: 20px 6%;
+			position: relative;
+		}
+		.main .search{
+			height: 100px;
+			font-size: 12px;
+			font-family: "黑体";
+			padding: 10px 18px;
+			background-color: rgb(255, 255, 255);
+		}
+		.main .search .search-items{
+			width: 20%;
+			float: left;
+			padding-top: 8px;
+		}
+		.main .search .buyers{
+			width: 30%;
+			float: left;
+		}
+		.main .search .others{
+			width: 30%;
+			height: auto;
+			float: left;
+		}
+		.main .search  .width-sm{
+			width: 65px;
+			height: 26px;
+		}
+		.main .search  .width-lg{
+			width: 115px;
+			height: 26px;
+			margin-top: 8px;
+		}
+		.main .search  .search-btn{
+			width: 50px;
+			height: 26px;
+			background-color: rgb(56, 138, 194);
+			color: rgb(255, 255, 255);
+			border: none;
+			text-align: center;
+			margin: 20px 30px;
+		}
+		.main .search img{
+			margin-top: -24px;
+			margin-left: -5px;
+		}
+		.main .history{
+			height: 65px;
+		}
+		
+		.main .alls .change{
+			width: 30px;
+			height: 65px;
+			text-align: center;
+			padding: 25px 0;
+			font-weight: bold;
+			color: rgb(205, 205, 205);
+			background-color: rgb(255, 255, 255);
+			border-top: 1px solid rgb(205, 205, 205);
+			border-left: 1px solid rgb(205, 205, 205);
+		}
+		.main .alls .prev{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.main .alls .next{
+			position: absolute;
+			top: 0;
+			right: 138px;
+		}
+		.main .alls .pricepos{
+			position: absolute;
+			top: 0;
+			left: 35px;
+		}
+		.main .alls .hissearch{
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.main .alls .price{
+			width: 126px;
+			height: 65px;
+			background-color: rgb(255, 255, 255);
+			float: left;
+			margin: 0 3px;
+			text-align: center;
+			padding: 10px 0;
+			border-top: 1px solid rgb(205, 205, 205);
+			border-left: 1px solid rgb(205, 205, 205);
+			font-family: "微软雅黑";
+			font-size: 12px;
+		}
+		.main .alls .special{
+			border-top: 3px solid rgb(67, 136, 200);
+		}
+		.main .alls .time{
+			color: rgb(51, 51, 51);
+		}
+		.main .alls .dan{
+			color: rgb(174, 174, 174);
+		}
+		.main .alls .money{
+			font-size: 21px;
+			color: rgb(236, 101, 0);
+		}
+		
+		.main .statis{
+			height: 112px;
+		}
+		.main .alls .every{
+			width: 227px;
+			height: 72px; 
+			border: 1px solid rgb(205, 205, 205);
+			float: left;
+			padding: 10px 10px;
+			background-color: rgb(255, 255, 255);
+			position: relative;
+		}
+		.main .statis p{
+			font-size: 12px;
+			font-family: "微软雅黑";
+		}
+		.main .statis .one{
+			margin-right: 30px;
+			border-left: 4px solid rgb(67, 178, 158);
+		}
+		.main .statis .two{
+			margin-right: 30px;
+			border-left: 4px solid rgb(56, 139, 194);
+		}
+		.main .statis .three{
+			margin-right: 30px;
+			border-left: 4px solid rgb(208, 75, 54);
+		}
+		.main .statis .four{
+			border-left: 4px solid rgb(226, 205, 70);
+		}
+		.main .statis .num{
+			font-size: 12px;
+			font-family: "黑体";
+			color: rgb(33, 33, 33);
+			line-height: 20px;
+		}
+		.main .statis .deal{
+			font-size: 10px;
+			font-family: "黑体";
+			color: rgb(183, 183, 183);
+		}
+		.main .statis .squre{
+			width: 62px;
+			height: 47px;
+			position: absolute;
+			top: 12px;
+			right: 15px;
+		}
+		.main .statis .colorone{
+			background-color: rgb(67, 178, 158);
+		}
+		.main .statis .colortwo{
+			background-color: rgb(56, 139, 194);
+		}
+		.main .statis .colorthree{
+			background-color: rgb(208, 75, 54);
+		}
+		.main .statis .colorfour{
+			background-color: rgb(226, 205, 70);
+		}
+		.main .items{
+			height: 358px;
+		}
+		.main .items .left{
+			width: 59%;
+			margin-right: 1%;
+			position: relative;
+		}
+		.main .items .right{
+			width: 40%;
+		}
+		.main .title{
+			width: 100%;
+			height: 35px;
+			font-size: 13px;
+			font-family: "黑体";
+			background-color: rgb(244, 245, 246);
+			color: rgb(183, 183, 183);
+			padding: 10px 20px;
+		}
+		.main .items .left nav{
+			width: 100%;
+			height: 33px;
+			padding: 0;
+			position: absolute;
+			top:33px;
+			left: 0;
+			z-index: 10;
+		}
+		.main .items .left a{
+			width: 88px;
+			height: 33px;
+			background-color: rgb(237, 237, 240);
+			float: left;
+			margin-right: 5px;
+			text-align: center;
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;
+			font-size: 13px;
+			font-family: "微软雅黑";
+			color: rgb(110, 110, 110);
+			padding: 5px 0;
+			border: 1px solid rgb(206, 206, 206);
+			border-bottom: 1px solid transparent;
+			
+		}
+		.main .items .item-tab{
+			width: 90%;
+			margin: 0 5.5%;
+			border: 1px solid rgb(206, 206, 206);
+			padding: 0;
+			position: absolute;
+			top: 66px;
+			left: 0;
+			text-align: center;
+			z-index: 1;
+		}
+		.main .items .left .noback{
+			background-color: rgb(255, 255, 255);
+			height: 35px;
+		}
+		.main .items .item-tab table{
+			font-size: 12px;
+			font-family: "宋体";
+			color: rgb(99, 99, 99);
+			margin: 40px;
+		}
+		.main .items .item-tab td{
+			width: 112px;
+			height: 30px;
+			border: 1px solid  rgb(206, 206, 206);
+		}
+		.main .items .right table{
+			width: 80%;
+			margin: 0 10%;
+			border-bottom: 1px solid rgb(206, 206, 206);
+		}
+		.main .items .right table td,th{
+			font-size: 12px;
+			font-family: "微软雅黑";
+			color: rgb(206, 206, 206);
+			text-align: left;
+			border: none;
+		}
+		.main .items .right table .trborder{
+			border-top: 1px solid rgb(206, 206, 206);
+			border-bottom: 1px solid rgb(206, 206, 206);
+		}
+		.main .items .right table .trborderleft{
+			border-left: 1px solid rgb(206, 206, 206);
+		}
+		.main .items .right table .trheight{
+			height: 140px;
+		}
+		.main .items .right table span{
+			color: rgb(0, 0, 0);
+		}
+		.main .items .right form{
+			margin-top: 10px;
+			padding: 0 10%;
+			font-size: 12px;
+			color: rgb(206, 206, 206);
+		}
+		.main .items .right form .search{
+			width: 50px;
+			height: 30px;
+			border-radius: 3px;
+			border: none;
+			background-color: rgb(56, 138, 198);
+			float: right;
+			color: rgb(255, 255, 255);
+		}
+		.main .item{
+			height: 355px;
+			background-color: rgb(255, 255, 255);
+			border-radius: 10px;
+			float: left;
+			border: 1px solid rgb(255, 255, 255);
+		}
+		.main .last{
+			height: 358px;
+		}
+		.main .last .calender{
+			width: 39%;
+			margin-right: 1%;
+		}
+		.main .last .cars{
+			width: 60%;
+		}
+		.main .last .cars table{
+			width: 90%;
+			height: auto;
+			margin: 2% 5%;
+		}
+		.main .last .cars th,td{
+			font-size: 12px;
+			font-family: "黑体";
+			border: 1px solid rgb(206, 206, 206);
+			text-align: center;
+			height: 25px;
+		}
+		.main .last .cars tbody tr:first-child{
+			background-color: rgb(244, 245, 247);
+		}
+		.main .last .cars .cont{
+			width: 160px;
+			height: 6px;
+			background-color: rgb(221, 221, 221);
+			/* display: inline-block; */
+			margin: 10px 40px;
+			float: right;
+		}
+		.main .last .cars .dazhong{
+			width: 140px;
+			height: 6px;
+			background-color: rgb(237, 110, 82);
+			float: left;
+		}
+		.main .last .cars .fengtian{
+			width: 131px;
+			height: 6px;
+			background-color: rgb(239, 128, 79);
+			float: left;
+		}
+		.main .last .cars .aodi{
+			width: 121px;
+			height: 6px;
+			background-color: rgb(241, 158, 79);
+			float: left;
+		}
+		.main .last .cars .relar{
+			height: 6px;
+			background-color: rgb(137, 202, 240);
+			float: left;
+		}
+		.main .last .cars .bentian{
+			width: 121px;
+		}
+		.main .last .cars .fute{
+			width: 111px;
+		}
+		.main .last .cars .baoma{
+			width: 101px;
+		}
+		.main .last .cars .xiandai{
+			width: 91px;
+		}
+		.main .last .cars .qiya{
+			width: 81px;
+		}
+		.main .last .cars .benchi{
+			width: 71px;
+		}
+		.main .last .cars .bieke{
+			width: 67px;
+		}
+		.main .last .calender form{
+			font-size: 12px;
+			font-family: "微软雅黑";
+			height: 20px;
+			text-align: center;
+		}
+		.main .last .calender select{
+			width: 20%;
+		}
+		.main .last .calender input{
+			width: 20%;
+			background-color: transparent;
+			border: 1px solid rgb(206, 206, 206);
+		}
+		.main .last .calender table{
+			width: 80%;
+			margin: 10px 10%;
+		}
+		.main .last .calender table thead{
+			border-top: 1px solid rgb(127, 203, 240);
+			border-bottom: 1px solid rgb(206, 206, 206);
+			font-size: 12px;
+		}
+		.main .last .calender table th{
+			text-align: center;
+		}
+		.main .last .calender table tr{
+			margin-top: 3px;
+		}
+		.main .last .calender table td{
+			width: 42px;
+			height: 42px;
+			font-size: 12px;
+			font-family: "黑体";
+			border: none;
+			color: rgb(0, 0, 0);
+		}
+		.main .last .calender table .redworld{
+			color: rgb(205, 53, 57);
+		}  
+		.main .last .calender table .yellowborder{
+			border:1px solid rgb(247, 213, 43);
+		}
