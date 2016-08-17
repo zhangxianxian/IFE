@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			
+		}
+		body{
+			box-sizing: border-box;
+			background-color: gray;
+			height: auto;
+
+		}
+		.container{
+			width: 980px;
+			height: 1386px;
+			padding: 0 44px;
+			background-color: white;
+			margin: 0 auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -300px;
+			margin-left: -490px;
+		}
+		#first{
+			width: 892px;
+			height: 61px;
+			border-bottom: 2px solid #938e8c;
+			font-size: 12px;
+			font-family: "黑体";
+		}
+		#first .title{
+			width: 110px;
+			height: 61px;
+			background-color: red;
+		}
+		#first .name{
+			line-height: 100px;
+			color: #fff;
+		}
+		#first .date{
+			line-height: 100px;
+			color: #d45d5c;
+			float: right;
+		}
+		#second{
+			width: 892px;
+			height: 301px;
+			margin-top: 20px;
+			border: 1px solid black;
+			padding-right: 0;
+		}
+		
+		#second .pic{
+			position: absolute;
+			width: 641px;
+			height: 301px;
+			float: left;
+			border: 1px solid blue;
+		}
+		#second .pic img{
+			width: 641px;
+			height: 301px;
+		}
+		#second .pic .left{
+			width: 191px;
+			height: 301px;
+			background-color: green;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0.5;
+		}
+		#second .pic .right{
+			width: 191px;
+			height: 301px;
+			background-color: red;
+			position: absolute;
+			top: 0;
+			right: 0;
+			opacity: 0.5;
+		}
+		#second .words{
+			width: 203px;
+			height: 299px; 
+			border: 2px solid #cc8091;
+			float: right;
+			margin-right: -45px;	
+		}
+		#second .words span{
+			font-size: 24PX;
+		}
+		#second .words .about{
+			width: 66px;
+			border-bottom: 2px solid #000;
+			line-height: 40px;
+			font-size: 18px;
+			color: #000;
+			font-family: "微软雅黑";
+		}
+		#second .words .tec{
+			width: 112px;
+			border-bottom: 2px solid #000;
+			line-height: 40px;
+			font-size: 18px;
+			color: #000;
+			font-family: "微软雅黑";
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="first">
+			<p class="date">2016.03</p>
+			<div class="title">
+				<p class="name">&nbsp;ife.baidu.com</p>
+			</div>
+			
+		</div>
+		<div id="second">
+			
+			<div class="pic">
+				<img src="./images/3.PNG" alt="图片">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			<div class="words">
+				<div class="about"><span>A</span>BOUT</div>
+				<div class="tec"><span>T</span>ECHOLOGE</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
