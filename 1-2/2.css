@@ -1,0 +1,127 @@
+*{
+			padding: 0;
+			margin: 0;
+			font-family: "黑体";
+		}
+		article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+		header{
+			background-color: #333;
+			height: 60px;
+		}
+		header img{
+			width: 165px;
+			height: 45px;
+			float: left;
+			margin-left: 25px;
+		}
+		header ul li{
+			margin-top: 25px;
+    		vertical-align: middle;
+    		display: list-item;
+    		list-style: inside disc;
+			float: right; 
+			width: 90px;
+		}
+		header ul li a{
+			color: white;
+			text-decoration: none;
+			font-size: 0.6em;
+		}
+		article{
+			margin: 20px;
+			padding: 35px 25px;
+			border: 1px solid lightgrey;
+			box-shadow:  2px 2px 1px 1px #888888;
+			background-color: white;
+		}
+		p{
+			line-height: 1.5em;
+		}
+		img{
+			width: 220px;
+			height: 220px;
+			margin: 15px 0;
+		}
+		h3{
+			color: gray;
+		}
+		.author{
+			color:  gray;
+		}
+		#main{
+			background-color:lightgray;
+			margin: 0;
+			padding: 15px 0;
+		}
+		#nostyle{
+			list-style-type: none;
+		}
+		.picture{
+			box-sizing: border-box;
+			border: 1px solid black;
+			width: 150px;
+			margin: 20px 30px;
+			padding: 15px;
+		}
+		.picture img{
+			width: 120px;
+			height: 100px;
+			padding: 0;
+			margin: 0;
+		}
+		.picture p{
+			line-height: 0.7em;
+			text-align: center;
+		}
+		article ol{
+			margin-left: 50px;
+		}
+		table {
+			border: 1px solid lightgrey;
+			border-collapse: collapse;
+			line-height: 25px;
+			width: 100%;
+		}
+		table tr td{
+			border: 1px solid lightgray;
+		}
+		table tr th{
+			width: 40%;
+			border: 1px solid lightgray;
+			color: white;
+			background-color: black;
+		}
+		table tr th:nth-child(3){
+			width: 20%;
+		}
+		table tr:last-child{
+			background-color: lightgray;
+		}
+		#last h4{
+			border-left: 2px solid gray;
+			line-height: 25px;
+			padding-left: 20px;
+		}
+		form{
+			padding-left: 250px;
+			font-size: 0.8em;
+		}
+		form p{
+			color: gray;
+			padding-left: 100px;
+		}
+		form button{
+			width: 1300px;
+			height: 40px;
+			margin-left:-235px;
+			background: skyblue;
+			border-radius: 5px;
+			color: white;
+		}
+		footer{
+			background-color: black;
+			text-align: center;
+			color: white;
+			height: 60px;
+			margin: 0;
+		}
