@@ -1,0 +1,126 @@
+*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		table thead{
+			color: rgb(255, 255, 255);
+			background-color: rgb(0, 0, 0);
+		}
+		table tr{
+			font-family: "黑体";
+			font-size: 15px;
+		}
+		table tbody tr:nth-child(even){
+			background-color: gray;
+		}
+		table tbody tr:nth-child(odd){
+			background-color: white;
+		}
+		table tbody tr:nth-child(-n+3){
+			color: red;
+		}
+		input{width: 120px;}
+		input:focus{
+			width: 300px;
+			animation: move 3s;	
+		}
+		@keyframes move{
+			from {width: 120px;}
+			 to  {width: 300px;}
+			}
+
+		#show{
+			width: 320px;
+			height: 150px;
+			position: relative;
+			overflow: hidden;
+		}
+		#container{
+			width: 1283px;
+			height: 150px;
+			position: absolute;
+			top: 0;
+			left: 0px;
+			z-index: 10;
+		}
+		
+		#first{
+			background-color: blue;
+			width: 320px;
+			height: 150px; 
+			float: left;
+		}
+		#second{
+			background-color: red;
+			width: 320px;
+			height: 150px; 
+			float: left;
+		}
+		#third{
+			background-color: yellow;
+			width: 320px;
+			height: 150px; 
+			float: left;
+		}
+		#forth{
+			background-color: blue;
+			width: 320px;
+			height: 150px; 
+			float: left;
+		}
+		#tag{
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+		.num{
+			width: 40px;
+			height: 40px;
+			background-color: grey;
+			color: white;
+			font-weight: bold;
+			display: inline-block;
+			text-align: center;
+			padding: 10px ;
+			position: absolute;
+			bottom: 0;
+			z-index: 100;
+			border-radius: 50%;
+		}
+		#one{
+			right: 90px;
+		}
+		#two{
+			right: 45px;
+		}
+		#three{
+			right: 0;
+		}
+		#container:hover{animation-play-state:paused;} 
+		.num:hover{
+			animation-play-state:paused;
+			background-color: black;
+		} 
+		.play{  
+            animation: ma 10s ease-out infinite;
+        } 
+		@keyframes ma { /* 该动画一直不停的轮播三个图片 */  
+            0%,15%{ margin-left: 0px; }  
+            /* 0%到15%之间的时间表示图1是停留状态，15%到40%之间的时间用来改变位置由0到-320px; */
+            40%,55% {  margin-left: -320px; } 
+            80%,95%	{margin-left: -640px;}
+            99.5% { margin-left: -960px; } 
+            100% { margin-left: 0px;  }  
+        }
+
+         /* ~选择符表示选择所有one元素后面的同级container元素，
+        forwards表示把物体动画地从一个地方移动到另一个地方，并让它停留在那里：*/
+        #one:hover ~ #container{animation: ma1 .1s ease-out forwards;}  
+        #two:hover ~ #container{animation: ma2 .1s ease-out forwards;}  
+        #three:hover ~ #container{animation: ma3 .1s ease-out forwards;}  
+       
+        @keyframes ma1 {100%{margin-left:-0px;} }  
+        @keyframes ma2 {100%{margin-left:-320px;}   }  
+        @keyframes ma3 {100%{margin-left:-640px;}   }  
+    
