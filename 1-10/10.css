@@ -1,0 +1,31 @@
+.container{
+			display: flex;
+			justify-content: space-between; /* 两侧的元素贴着浏览器的边 */
+		}
+
+		@media(min-width: 640px){    /* 屏幕宽度大于640px时候设置 */
+			.container{
+				align-items: center;	/* 垂直居中对齐 */
+				flex-wrap: nowrap;
+			}
+		}
+
+		@media(max-width: 640px){ /* 屏幕宽度小于640px时候设置 */
+			.container{
+				align-items: flex-start;	/* 顶端对齐 */
+				align-content: flex-start;  
+				flex-wrap: wrap;
+			}
+			.move{
+				order: -1; 		/* 元素顺序，越小越靠前，默认为0 */
+			}
+		}
+		.box-sty{
+			margin: 10px;
+			border: 1px solid #f00;
+			width: 150px;
+		}
+		.one{height: 120px;}
+		.two{height: 100px;}
+		.three{height: 40px;}
+		.four{height: 200px;border: 1px solid #00f;}
