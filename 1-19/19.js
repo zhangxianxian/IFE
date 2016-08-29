@@ -119,11 +119,8 @@ function fadeOutLeft() {
 * 点击元素本身会删除该元素
 */
 function deleteSelf(e) {
-	var temp = e.target.getAttribute("value");
-	if(temp){
-		num.splice(num.indexOf(temp), 1);
-		renderChart(num);
-	}
+	var node = e.target;
+	queue.removeChild(node);
 }
 
 /**
