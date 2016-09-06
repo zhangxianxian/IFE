@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IFE JavaScript Task 20</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		#queue{
+			margin-top: 5px;
+			width: 100%;
+			height: auto;
+			border: 1px solid red;
+			padding-top: 60px;
+			text-align: center;
+		}
+		.item{
+			display: inline-block;
+			/* width: 15px;  */ /* 根据输入数据的大小在js中自定义 */
+			height: 45px; 
+			background-color: rgb(255, 0, 0);
+			margin: 1px;
+			color: rgb(255, 255, 255);
+			font-size: 22px;
+			text-align: center;
+			padding-top: 5px;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		<textarea name="" id="in-value" cols="30" rows="10"></textarea>
+		<input type="button" value="左侧入" id="left-in">
+		<input type="button" value="右侧入" id="right-in">
+		<input type="button" value="左侧出" id="left-out">
+		<input type="button" value="右侧出" id="right-out">
+		输入要查找的字符：<input type="text" id="search-value">
+		<input type="button" value="查找" id="search-btn">
+	</form>
+	<div id="queue">
+		
+	</div>
+	<script src="20.js"></script>
+</body>
+</html>

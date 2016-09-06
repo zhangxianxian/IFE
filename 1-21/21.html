@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IFE JavaScript Task 21</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		.queue{
+			margin-top: 5px;
+			width: 100%;
+			height: auto;
+			border: 1px solid red;
+			padding: 10px;
+		}
+		.item{
+			display: inline-block;
+			min-width: 45px;
+			width: auto; 
+			height: 45px; 
+			/* background-color: rgb(255, 0, 0); */ /* 根据输入数据的大小在js中自定义 */
+			margin: 3px;
+			color: rgb(255, 255, 255);
+			font-size: 22px;
+			font-weight: bold;
+			text-align: center;
+			padding-top: 10px;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		Tag:<input type="text" id="tag-in">
+		<div id="tags" class="queue">
+			
+		</div>
+		输入兴趣爱好(不可重复)：<textarea name="" id="in-value" cols="50" rows="6"></textarea><br><br>
+		<input type="button" value="确认兴趣爱好" id="submit-btn">
+		<div id="hobbies" class="queue">
+			
+		</div>
+	</form>
+	
+	<script src="21.js"></script>
+</body>
+</html>
